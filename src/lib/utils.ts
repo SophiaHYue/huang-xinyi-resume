@@ -1,6 +1,6 @@
 import { clsx, type ClassValue } from "clsx"
 import { twMerge } from "tailwind-merge"
-import { cva, type VariantProps } from "class-variance-authority"
+import { cva } from "class-variance-authority"
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
@@ -76,8 +76,6 @@ export const buttonVariants = cva(
   }
 )
 
-)
-
 export const sidebarVariants = cva(
   "bg-sidebar text-sidebar-foreground group/sidebar relative z-30 flex h-full flex-col duration-200 ease-in-out data-[state=collapsed]:w-[var(--sidebar-width-collapsed)]",
   {
@@ -103,7 +101,6 @@ export const sidebarVariants = cva(
       },
       {
         collapsible: "icon",
-        state: "expanded",
         className: "w-[var(--sidebar-width)] p-4 pr-2.5",
       },
     ],
