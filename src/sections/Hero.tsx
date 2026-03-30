@@ -2,6 +2,9 @@ import { motion } from 'framer-motion';
 import { MapPin, Sparkles, FileText } from 'lucide-react';
 
 export default function Hero() {
+  const bgImageUrl = `${import.meta.env.BASE_URL}images/taipei-hk-bg.jpg`;
+  const avatarUrl = `${import.meta.env.BASE_URL}images/avatar.jpg`;
+
   const scrollToResume = () => {
     const element = document.getElementById('resume');
     if (element) {
@@ -12,7 +15,7 @@ export default function Hero() {
   return (
     <section 
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cover bg-center bg-fixed"
-      style={{ backgroundImage: "url('/images/taipei-hk-bg.jpg')" }}
+      style={{ backgroundImage: `url('${bgImageUrl}')` }}
     >
       {/* Dark overlay for better text readability */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60" />
@@ -31,7 +34,7 @@ export default function Hero() {
           <div className="relative mx-auto w-32 h-32 mb-8">
             <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-orange-400 rounded-full blur-lg opacity-60" />
             <img
-              src="/images/avatar.jpg"
+              src={avatarUrl}
               alt="黃心怡"
               className="relative w-full h-full object-cover rounded-full border-4 border-white/80 shadow-xl"
             />

@@ -4,6 +4,7 @@ import { useRef } from 'react';
 import { User, Mail, Linkedin, Github, Twitter } from 'lucide-react';
 
 export default function ProfileCard() {
+  const avatarUrl = `${import.meta.env.BASE_URL}images/avatar.jpg`;
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
@@ -31,7 +32,7 @@ export default function ProfileCard() {
             <div className="bg-gradient-to-r from-brand-primary to-blue-600 p-6 text-center">
               <div className="w-24 h-24 mx-auto mb-4 rounded-full border-4 border-white/30 overflow-hidden">
                 <img
-                  src="/images/avatar.jpg"
+                  src={avatarUrl}
                   alt="黃心怡"
                   className="w-full h-full object-cover"
                 />
