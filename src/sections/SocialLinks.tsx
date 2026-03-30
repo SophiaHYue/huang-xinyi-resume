@@ -53,7 +53,7 @@ export default function SocialLinks() {
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-3 mb-4">
               <div className="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center">
-                <Link2 className="w-6 h-6 text-orange-600" />
+                <Link2 className="w-5 h-5 text-orange-600" />
               </div>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-3">社群連結</h2>
@@ -79,7 +79,7 @@ export default function SocialLinks() {
               >
                 <div className={`h-full ${social.bgColor} rounded-2xl p-6 border border-gray-100 hover:border-transparent hover:shadow-lg transition-all duration-300 group-hover:${social.hoverColor}`}>
                   <div className={`w-14 h-14 bg-gradient-to-br ${social.color} rounded-xl flex items-center justify-center mb-4 shadow-md group-hover:scale-110 group-hover:shadow-lg transition-all duration-300`}>
-                    <social.icon className="w-7 h-7 text-white" />
+                    <social.icon className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-lg font-bold text-gray-800 group-hover:text-gray-900 transition-colors">
                     {social.name}

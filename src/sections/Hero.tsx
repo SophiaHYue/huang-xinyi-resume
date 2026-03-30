@@ -36,7 +36,7 @@ export default function Hero() {
               className="relative w-full h-full object-cover rounded-full border-4 border-white/80 shadow-xl"
             />
             <div className="absolute -bottom-2 -right-2 bg-orange-500 text-white p-2 rounded-full shadow-lg">
-              <Sparkles className="w-4 h-4" />
+              <Sparkles className="w-5 h-5" />
             </div>
           </div>
           
@@ -57,7 +57,7 @@ export default function Hero() {
           
           {/* Location badge */}
           <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full shadow-sm border border-white/30 mb-8">
-            <MapPin className="w-4 h-4 text-orange-300" />
+            <MapPin className="w-5 h-5 text-orange-300" />
             <span className="text-white/90 text-sm">來自香港 · 現居台北</span>
           </div>
           

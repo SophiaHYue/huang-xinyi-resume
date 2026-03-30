@@ -95,7 +95,7 @@ export default function Daily() {
             className="mt-10 text-center"
           >
             <div className="inline-flex items-center gap-2 text-gray-400">
-              <Palette className="w-4 h-4" />
+              <Palette className="w-5 h-5" />
               <span className="text-sm italic">生活即是靈感的來源</span>
             </div>
           </motion.div>
@@ -134,7 +134,7 @@ export default function Daily() {
                         {post.title}
                       </h3>
                       <div className="flex items-center gap-2 text-gray-400 text-sm mb-3">
-                        <Calendar className="w-4 h-4" />
+                        <Calendar className="w-5 h-5" />
                         {post.date}
                       </div>
                       <p className="text-gray-600 leading-relaxed">{post.excerpt}</p>
@@ -154,7 +154,7 @@ export default function Daily() {
                 className="inline-flex items-center gap-2 text-brand-primary hover:text-brand-secondary font-medium transition-colors"
               >
                 查看全部文章
-                <ArrowRight className="w-4 h-4" />
+                <ArrowRight className="w-5 h-5" />
               </a>
             </div>
           </motion.div>
